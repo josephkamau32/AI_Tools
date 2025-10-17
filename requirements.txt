@@ -1,52 +1,56 @@
-# === CORE AI/ML FRAMEWORKS ===
-tensorflow==2.15.0
+# Core Data Science & Machine Learning
+tensorflow
 scikit-learn==1.3.2
-
-# === NATURAL LANGUAGE PROCESSING ===
-spacy==3.7.2
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.0/en_core_web_sm-3.7.0.tar.gz
-
-# === DATA SCIENCE & COMPUTATION ===
 pandas==2.1.3
 numpy==1.24.3
 scipy==1.11.3
 
-# === STREAMLIT & WEB DEPLOYMENT ===
-streamlit==1.28.1
-streamlit-drawable-canvas==0.9.3
-altair==5.1.2
+# Natural Language Processing
+spacy==3.7.2
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.0/en_core_web_sm-3.7.0.tar.gz
 
-# === IMAGE PROCESSING (Pillow only - no OpenCV for deployment) ===
-Pillow==10.1.0
-imageio==2.31.5
-
-# === DATA VISUALIZATION ===
+# Data Visualization
 matplotlib==3.7.2
 seaborn==0.13.0
 plotly==5.17.0
 
-# === DEVELOPMENT & UTILITIES ===
+# Streamlit & Web Deployment
+streamlit==1.28.1
+streamlit-drawable-canvas==0.9.3
+altair==5.1.2
+Pillow==10.1.0
+opencv-python==4.8.1.78
+
+# Image Processing
+Pillow==10.1.0
+opencv-python==4.8.1.78
+imageio==2.31.5
+
+# Utilities & Development
 jupyter==1.0.0
 ipykernel==6.25.2
 ipython==8.17.2
 tqdm==4.66.1
 colorama==0.4.6
 
-# === DATA MANAGEMENT & SERIALIZATION ===
-h5py==3.10.0
-pyyaml==6.0.1
-joblib==1.3.2
-
-# === HTTP & REQUESTS ===
+# HTTP & API Support
 requests==2.31.0
 urllib3==2.0.7
 aiohttp==3.9.1
 
-# === ADDITIONAL ML UTILITIES ===
-keras==2.15.0
-protobuf==4.25.1
-absl-py==1.4.0
+# Data Management
+h5py==3.10.0
+pyyaml==6.0.1
+joblib==1.3.2
 
-# === COMPATIBILITY & SYSTEM ===
-typing-extensions==4.8.0
-packaging==23.2
+# Alternative: If you prefer PyTorch instead of TensorFlow
+# torch==2.1.0
+# torchvision==0.16.0
+
+# For potential model conversion
+onnx==1.15.0
+onnxruntime==1.16.3
+
+# For additional deployment options
+flask==3.0.0
+gunicorn==21.2.0
